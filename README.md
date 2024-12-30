@@ -1,2 +1,2 @@
-# NuxtTemplate
-My personal template for nuxt projects
+# BdayTeaser
+A 'Save the Date' Page for my bday

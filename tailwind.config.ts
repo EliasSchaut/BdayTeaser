@@ -15,7 +15,7 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       colors: {
-        prime: colors.indigo,
+        prime: colors.blue,
         second: colors.gray,
       },
       fontFamily: {
