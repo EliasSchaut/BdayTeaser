@@ -11,9 +11,9 @@
       <p
         class="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-second-700 dark:text-second-300"
       >
-        <span>Am </span>
-        <Accent>07. Juni 2025 </Accent>
-        <span>steigt die Geburtstagsparty </span>
+        <span>{{ $t('home.hero.1') }}</span>
+        <Accent>{{ $t('home.hero.date') }}</Accent>
+        <span>{{ $t('home.hero.2') }}</span>
         <Typewriter
           :strings="[
             $t('home.typewriter.suffix.0'),
@@ -33,18 +33,19 @@
           ]"
         />
         <br />
-        <span>Halte den Termin frei und sei dabei!</span>
+        <span>{{ $t('home.hero.3') }}</span>
       </p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <a
           href="#features"
           class="shadow-xs rounded-md bg-prime-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-prime-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-prime-600"
-          >Learn more</a
+          >{{ $t('home.hero.learn_more') }}</a
         >
         <a
           href="#community"
           class="text-sm/6 font-semibold text-second-900 dark:text-second-100"
-          >Join Community <span aria-hidden="true">→</span></a
+          >{{ $t('home.hero.join_community') }}
+          <span aria-hidden="true">→</span></a
         >
       </div>
     </div>
@@ -202,16 +203,13 @@
         <h2
           class="mx-auto max-w-3xl text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl"
         >
-          Get notified when the registration is open
+          {{ $t('home.community.head') }}
         </h2>
         <p class="mx-auto mt-6 max-w-lg text-center text-lg text-second-300">
-          Du möchtest nichts verpassen? Sign up for the bday newsletter! We care
-          about your data. Read our
-          <a class="font-bold hover:underline" href="/privacy">privacy policy</a
-          >.
+          {{ $t('home.community.content') }}
         </p>
         <a
-          class="shadow-xs mx-auto mt-10 flex w-fit items-center justify-center gap-x-2 rounded-md bg-white px-12 py-2.5 text-sm font-semibold text-second-900 hover:bg-second-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          class="shadow-xs mx-auto mt-10 flex w-min items-center justify-center gap-x-2 rounded-md bg-white px-12 py-2.5 text-sm font-semibold text-second-900 hover:bg-second-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white xs:w-fit"
           type="button"
           href="https://chat.whatsapp.com/HF1UyLxp5Yc33L8s5rHFGi"
           target="_blank"
@@ -222,7 +220,7 @@
             width="20"
             alt="WhatsApp Logo"
           />
-          <span>Join WhatsApp Community</span>
+          <span>{{ $t('home.community.join') }}</span>
         </a>
         <svg
           viewBox="0 0 1024 1024"

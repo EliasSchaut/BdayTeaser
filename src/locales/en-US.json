@@ -20,6 +20,14 @@
       "system": "System"
     }
   },
+  "footer": {
+    "home": "Home",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "resources": "Resources",
+    "source": "Source Code",
+    "title": "Footer"
+  },
   "home": {
     "blog": {
       "bday21": {
@@ -37,6 +45,19 @@
       "date": "4th June",
       "title": "From the Blog"
     },
+    "community": {
+      "content": "Don't want to miss anything? You need a ride or a place to sleep? You want exclusive content and pictures from Bday? Then join the Bday WhatsApp community!",
+      "head": "Stay tuned! Ask your questions!",
+      "join": "Join WhatsApp Community"
+    },
+    "hero": {
+      "1": "The birthday party will take place on ",
+      "2": ". It's the event ",
+      "3": "Keep the date free and be part of it!",
+      "date": "07 June 2025",
+      "join_community": "Join Community",
+      "learn_more": "Learn more"
+    },
     "newsletter": {
       "done": "Done. Confirm Mail!",
       "subscribe": "Subscribe",
@@ -50,13 +71,13 @@
           "subtitle": "Fresh from the barrel",
           "title": "Tapped beer"
         },
-        "soft": {
-          "subtitle": "Various types and brands",
-          "title": "Softdrinks"
-        },
         "cocktails": {
           "subtitle": "Also non-alcoholic",
           "title": "Cocktails"
+        },
+        "soft": {
+          "subtitle": "Various types and brands",
+          "title": "Softdrinks"
         },
         "title": "Drinks"
       },
@@ -157,14 +178,6 @@
       ]
     }
   },
-  "footer": {
-    "home": "Home",
-    "imprint": "Imprint",
-    "privacy": "Privacy",
-    "resources": "Resources",
-    "source": "Source Code",
-    "title": "Footer"
-  },
   "imprint": {
     "contact": "Contact",
     "declaration": "Information according to § 5 TMG",
@@ -173,10 +186,9 @@
     "title": "Imprint"
   },
   "nav": {
-    "about": "About",
-    "articles": "Articles",
-    "projects": "Projects",
-    "wiki": "Wiki"
+    "blog": "Blog",
+    "community": "Community",
+    "features": "Features"
   },
   "privacy": {
     "cookies": {

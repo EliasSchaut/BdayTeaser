@@ -20,6 +20,14 @@
       "system": "System"
     }
   },
+  "footer": {
+    "home": "Startseite",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "resources": "Ressourcen",
+    "source": "Quellcode",
+    "title": "Footer"
+  },
   "home": {
     "blog": {
       "bday21": {
@@ -37,6 +45,19 @@
       "date": "04. Juni",
       "title": "Aus dem Blog"
     },
+    "community": {
+      "content": "Du möchtest nichts verpassen? Du benötigst eine Mitfahrgelegenheit oder Schlafplatz? Du willst exklusiven Content und Bilder vom Bday? Dann trete der Bday-WhatsApp-Community bei!",
+      "head": "Verpasse keine Infos! Stelle deine Fragen!",
+      "join": "WhatsApp-Community beitreten"
+    },
+    "hero": {
+      "1": "Am ",
+      "2": "steigt die Geburtstagsparty ",
+      "3": "Halte den Termin frei und sei dabei!",
+      "date": "07. Juni 2025 ",
+      "join_community": "Community beitreten",
+      "learn_more": "Mehr erfahren"
+    },
     "newsletter": {
       "done": "Fertig. Mail bestätigen!",
       "subscribe": "Abonnieren",
@@ -50,13 +71,13 @@
           "subtitle": "Frisch vom Fass",
           "title": "Gezapftes Bier"
         },
-        "soft": {
-          "subtitle": "Verschiedene Sorten und Marken",
-          "title": "Softgetränke"
-        },
         "cocktails": {
           "subtitle": "Auch alkoholfrei",
           "title": "Cocktails"
+        },
+        "soft": {
+          "subtitle": "Verschiedene Sorten und Marken",
+          "title": "Softgetränke"
         },
         "title": "Getränke"
       },
@@ -157,14 +178,6 @@
       ]
     }
   },
-  "footer": {
-    "home": "Startseite",
-    "imprint": "Impressum",
-    "privacy": "Datenschutz",
-    "resources": "Ressourcen",
-    "source": "Quellcode",
-    "title": "Footer"
-  },
   "imprint": {
     "contact": "Kontakt",
     "declaration": "Angaben gemäß § 5 TMG",
@@ -173,7 +186,9 @@
     "title": "Impressum"
   },
   "nav": {
-    "about": "Über"
+    "blog": "Blog",
+    "community": "Community",
+    "features": "Vorgestellt"
   },
   "privacy": {
     "cookies": {

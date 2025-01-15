@@ -16,22 +16,22 @@
             <a
               class="hidden rounded-md px-2 py-1 hover:bg-prime-50 dark:hover:bg-prime-950 sm:inline"
               href="/#features"
-              >Features</a
+              >{{ $t('nav.features') }}</a
             >
             <a
               class="hidden rounded-md px-2 py-1 hover:bg-prime-50 dark:hover:bg-prime-950 sm:inline"
               href="/#blog"
-              >Blog</a
+              >{{ $t('nav.blog') }}</a
             >
             <a
               class="hidden rounded-md px-2 py-1 hover:bg-prime-50 dark:hover:bg-prime-950 sm:inline"
               href="/#community"
-              >Join&nbsp;Community</a
+              >{{ $t('nav.community') }}</a
             >
           </div>
         </div>
 
-        <div class="flex gap-x-4">
+        <div class="flex gap-x-6">
           <SettingTheme />
           <SettingLang />
         </div>
