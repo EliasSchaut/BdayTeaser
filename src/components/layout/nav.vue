@@ -33,7 +33,7 @@
 
         <div class="flex gap-x-4">
           <SettingTheme />
-          <!--<SettingLang/>-->
+          <SettingLang />
         </div>
       </div>
       <div class="bg-primary-500 dark:bg-primary-400 h-1 px-1" />
