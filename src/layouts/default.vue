@@ -1,8 +1,8 @@
 <template>
   <Body
-    class="bg-white text-secondary-900 dark:text-white selection:bg-prime-100 dark:bg-second-900 dark:selection:bg-prime-900"
+    class="text-secondary-900 bg-white selection:bg-prime-100 dark:bg-second-950 dark:text-white dark:selection:bg-prime-900"
   />
-  <div class="flex flex-col h-screen justify-between">
+  <div class="flex h-screen flex-col justify-between">
     <LayoutNav />
     <main class="mb-auto">
       <slot />

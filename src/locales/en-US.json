@@ -20,6 +20,143 @@
       "system": "System"
     }
   },
+  "home": {
+    "blog": {
+      "bday21": {
+        "desc": "About my 21rd birthday"
+      },
+      "bday22": {
+        "desc": "About my 22rd birthday"
+      },
+      "bday23": {
+        "desc": "About my 23rd birthday"
+      },
+      "bday24": {
+        "desc": "About my 24rd birthday"
+      },
+      "date": "4th June",
+      "title": "From the Blog"
+    },
+    "newsletter": {
+      "done": "Done. Confirm Mail!",
+      "subscribe": "Subscribe",
+      "subtitle": "Get notified when the next Bday24 Infos are coming up.",
+      "title": "Get notified",
+      "unsubscribe": "Unsubscribe"
+    },
+    "tabs": {
+      "drinks": {
+        "beer": {
+          "subtitle": "Fresh from the barrel",
+          "title": "Tapped beer"
+        },
+        "soft": {
+          "subtitle": "Various types and brands",
+          "title": "Softdrinks"
+        },
+        "cocktails": {
+          "subtitle": "Also non-alcoholic",
+          "title": "Cocktails"
+        },
+        "title": "Drinks"
+      },
+      "events": {
+        "kahoot": {
+          "subtitle": "Fun facts about Elias",
+          "title": "Kahoot"
+        },
+        "olympia": {
+          "subtitle": "Beer crate run/pantomime/egg run",
+          "title": "O-Lympia"
+        },
+        "pool": {
+          "subtitle": "+ Free play all night",
+          "title": "Pool tournament"
+        },
+        "title": "Events"
+      },
+      "featured": {
+        "art": {
+          "subtitle": "Leave your personality",
+          "title": "Art corner"
+        },
+        "dj": {
+          "subtitle": "Dance with paulstr all night long",
+          "title": "DJ Floor"
+        },
+        "karaoke": {
+          "subtitle": "Sing your favourite songs",
+          "title": "Karaoke"
+        },
+        "meta": {
+          "subtitle": "A scavenger hunt for puzzle lovers",
+          "title": "Secret Meta Game"
+        },
+        "speed_friending": {
+          "subtitle": "Make friends quickly and easily",
+          "title": "Speed Friending"
+        },
+        "team": {
+          "subtitle": "Bet, fight and win",
+          "title": "Team fight"
+        },
+        "title": "Featured"
+      },
+      "food": {
+        "finger_food": {
+          "subtitle": "Cakes/pastries/snacks",
+          "title": "Finger food"
+        },
+        "grill": {
+          "subtitle": "Salads & grilled (also veggie/vegan)",
+          "title": "Grill"
+        },
+        "ice": {
+          "subtitle": "For the sweet finish",
+          "title": "Ice cream"
+        },
+        "title": "Food"
+      },
+      "game": {
+        "corner": {
+          "subtitle": "MarioKart/SmashBros/Unrailed!/...",
+          "title": "Gaming corner"
+        },
+        "indoor": {
+          "subtitle": "Board games/cards/chess/go/...",
+          "title": "Indoor games"
+        },
+        "outdoor": {
+          "subtitle": "Slackline/Viking chess/Frisbee/...",
+          "title": "Outdoor games"
+        },
+        "title": "Game"
+      },
+      "title": "What awaits you"
+    },
+    "testimonials": {
+      "title": "What the guests say"
+    },
+    "typewriter": {
+      "prefix": "A birthday",
+      "suffix": [
+        "of the year",
+        "in the best of moods",
+        "perfectly organised",
+        "with maximum fun",
+        "full of surprises",
+        "with all your friends",
+        "to remember & retell",
+        "with Elias' bow tie",
+        "made for everyone",
+        "with a cool location",
+        "to make friends & fall in love with",
+        "with creative entertainment",
+        "with delicious food & drinks",
+        "for you"
+      ]
+    }
+  },
   "footer": {
     "home": "Home",
     "imprint": "Imprint",

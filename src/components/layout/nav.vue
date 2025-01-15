@@ -11,17 +11,22 @@
           </div>
 
           <div
-            class="text-md flex items-center space-x-12 font-normal text-second-700 dark:text-second-300"
+            class="text-md flex items-center space-x-12 font-medium text-second-700 dark:text-second-300"
           >
             <a
               class="hidden rounded-md px-2 py-1 hover:bg-prime-50 dark:hover:bg-prime-950 sm:inline"
               href="/#features"
-            >Features</a
+              >Features</a
             >
             <a
               class="hidden rounded-md px-2 py-1 hover:bg-prime-50 dark:hover:bg-prime-950 sm:inline"
-              href="/#newsletter"
-            >Newsletter</a
+              href="/#blog"
+              >Blog</a
+            >
+            <a
+              class="hidden rounded-md px-2 py-1 hover:bg-prime-50 dark:hover:bg-prime-950 sm:inline"
+              href="/#community"
+              >Join&nbsp;Community</a
             >
           </div>
         </div>
@@ -35,3 +40,4 @@
     </nav>
   </header>
 </template>
+<script setup lang="ts"></script>

@@ -12,12 +12,14 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxt/image',
     '@pinia/nuxt',
-    '@pinia-plugin-persistedstate/nuxt',
+    'pinia-plugin-persistedstate/nuxt',
+    '@vueuse/motion/nuxt',
+    'nuxt-particles',
   ],
 
   site: {
-    url: 'https://schaut.dev',
-    name: 'Elias Schaut',
+    url: 'https://bday.schaut.dev',
+    name: "Kid's Bday",
   },
 
   fonts: {
@@ -80,14 +82,10 @@ export default defineNuxtConfig({
     },
   },
 
-  pinia: {
-    autoImports: ['defineStore'],
-  },
-
-  piniaPersistedstate: {
+  piniaPluginPersistedstate: {
+    storage: 'cookies',
     cookieOptions: {
       maxAge: 60 * 60 * 24 * 30,
     },
   },
-
-})
+});
