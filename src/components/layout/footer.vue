@@ -1,7 +1,7 @@
 <template>
   <footer class="z-10">
     <div
-      class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
+      class="mx-auto max-w-7xl px-6 py-12 space-y-4 md:space-y-0 md:flex md:items-center md:justify-between lg:px-8"
     >
       <p
         class="mt-8 text-center text-sm/6 text-second-400 dark:text-second-500 md:order-1 md:mt-0"

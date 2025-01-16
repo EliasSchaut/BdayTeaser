@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute z-0 flex h-[47rem] w-full items-center justify-center [mask-repeat:no-repeat] [mask-size:40px]"
+    class="absolute sm:hidden z-0 flex h-[47rem] w-full items-center justify-center [mask-repeat:no-repeat] [mask-size:40px]"
   >
     <svg
       class="absolute h-full w-full"
