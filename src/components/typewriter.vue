@@ -1,43 +1,43 @@
 <template>
-  <span id="typewriter" ref="target" class="font-bold text-pink-500 dark:text-pink-400" />
+  <span
+    id="typewriter"
+    ref="target"
+    class="font-bold text-pink-500 dark:text-pink-400"
+  />
 </template>
 
 <script lang="ts">
 import Typewriter from 'typewriter-effect/dist/core';
-import { useElementVisibility } from '@vueuse/core'
+import { useElementVisibility } from '@vueuse/core';
 
 export default defineComponent({
   setup() {
-    const typewriter = ref<HTMLElement | null>(null)
-    return {
-      typewriter,
-      target_is_visible: useElementVisibility(typewriter) as Ref<boolean>,
-    }
+    return { typewriter: ref<Typewriter | null>(null) };
   },
   mounted() {
-    new Typewriter('#typewriter', {
+    this.typewriter = new Typewriter('#typewriter', {
       strings: this.strings,
       loop: true,
       autoStart: true,
     });
-    this.typewriter = this.$refs.target as HTMLElement;
-    watch(this.target_is_visible, this.on_element_visibility)
+    const target_is_visible = useElementVisibility(
+      this.$refs.target as HTMLElement,
+    ) as Ref<boolean>;
+    watch(target_is_visible, this.on_element_visibility);
   },
   methods: {
     on_element_visibility(is_visible: boolean) {
       if (is_visible) {
-        this.play()
-        console.log("play")
+        this.play();
       } else {
-        this.pause()
-        console.log("pause")
+        this.pause();
       }
     },
     pause() {
-      this.typewriter!.stop()
+      this.typewriter.pause();
     },
     play() {
-      this.typewriter!.start()
+      this.typewriter.start();
     },
   },
   props: {
