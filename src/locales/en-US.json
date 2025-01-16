@@ -1,6 +1,5 @@
 {
   "common": {
-    "and": "and",
     "lang": {
       "de": "German",
       "en": "English"
@@ -18,6 +17,10 @@
       "dark": "Dark",
       "light": "Light",
       "system": "System"
+    },
+    "unknown": {
+      "organisation": "Unknown",
+      "person": "Anonymous"
     }
   },
   "footer": {
@@ -43,7 +46,8 @@
         "desc": "About my 24rd birthday"
       },
       "date": "4th June",
-      "title": "From the Blog"
+      "tag": "From the Blog",
+      "title": "Learn about past bdays"
     },
     "community": {
       "content": "Don't want to miss anything? You need a ride or a place to sleep? You want exclusive content and pictures from Bday? Then join the Bday WhatsApp community!",
@@ -113,6 +117,10 @@
           "subtitle": "A scavenger hunt for puzzle lovers",
           "title": "Secret Meta Game"
         },
+        "photobox": {
+          "subtitle": "Create unique memories",
+          "title": "Photo box"
+        },
         "speed_friending": {
           "subtitle": "Make friends quickly and easily",
           "title": "Speed Friending"
@@ -156,6 +164,7 @@
       "title": "What awaits you"
     },
     "testimonials": {
+      "tag": "Testimonials",
       "title": "What the guests say"
     },
     "typewriter": {

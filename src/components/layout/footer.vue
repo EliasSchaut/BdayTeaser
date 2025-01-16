@@ -1,7 +1,7 @@
 <template>
   <footer class="z-10">
     <div
-      class="mx-auto max-w-7xl px-6 py-12 space-y-4 md:space-y-0 md:flex md:items-center md:justify-between lg:px-8"
+      class="mx-auto max-w-7xl space-y-4 px-6 py-12 md:flex md:items-center md:justify-between md:space-y-0 lg:px-8"
     >
       <p
         class="mt-8 text-center text-sm/6 text-second-400 dark:text-second-500 md:order-1 md:mt-0"
@@ -13,7 +13,8 @@
           v-for="item in navigation"
           :key="item.name"
           :href="item.href"
-          target="_blank"
+          :title="item.name"
+          :target="item.intern ? '_self' : '_blank'"
           class="text-second-400 hover:text-second-500 dark:text-second-500 dark:hover:text-second-400"
         >
           <span class="sr-only">{{ item.name }}</span>
@@ -25,10 +26,30 @@
 </template>
 
 <script setup lang="ts">
-const navigation = [
+import {
+  IdentificationIcon,
+  ClipboardDocumentCheckIcon,
+} from '@heroicons/vue/24/outline';
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
+
+const navigation = ref([
   {
-    name: 'GitHub',
+    name: computed(() => t('imprint.title')),
+    href: '/imprint',
+    intern: true,
+    icon: IdentificationIcon,
+  },
+  {
+    name: computed(() => t('privacy.title')),
+    href: '/privacy',
+    intern: true,
+    icon: ClipboardDocumentCheckIcon,
+  },
+  {
+    name: computed(() => 'GitHub'),
     href: 'https://github.com/EliasSchaut/BdayTeaser',
+    intern: false,
     icon: defineComponent({
       render: () =>
         h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -40,5 +61,5 @@ const navigation = [
         ]),
     }),
   },
-];
+]);
 </script>

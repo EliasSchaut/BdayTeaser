@@ -1,7 +1,7 @@
 <template>
   <!-- hero -->
   <Sparkles>
-    <div class="z-10 px-6 py-20 pb-16 text-center lg:py-32">
+    <section class="z-10 px-6 py-20 pb-16 text-center lg:py-32">
       <h1
         class="font-display mx-auto max-w-4xl text-5xl font-medium tracking-tight text-second-900 dark:text-second-100 sm:text-7xl"
       >
@@ -48,14 +48,13 @@
           <span aria-hidden="true">→</span></a
         >
       </div>
-    </div>
+    </section>
   </Sparkles>
 
   <!-- features -->
   <NuxtLayout name="grid" id="features">
-    <LayoutHeading class="relative top-32"
-      >{{ $t('home.tabs.title') }}
-    </LayoutHeading>
+    <LayoutHeadingTag class="pt-40">Features</LayoutHeadingTag>
+    <LayoutHeadingGradient>{{ $t('home.tabs.title') }}</LayoutHeadingGradient>
     <Tabs>
       <TabsItem :title="$t('home.tabs.featured.title')">
         <Card3d
@@ -79,9 +78,9 @@
           image_src="/img/meta.jpg"
         />
         <Card3d
-          :title="$t('home.tabs.featured.speed_friending.title')"
-          :subtitle="$t('home.tabs.featured.speed_friending.subtitle')"
-          image_src="/img/speed_friending.jpg"
+          :title="$t('home.tabs.featured.photobox.title')"
+          :subtitle="$t('home.tabs.featured.photobox.subtitle')"
+          image_src="/img/photobox.jpg"
         />
         <Card3d
           :title="$t('home.tabs.featured.art.title')"
@@ -90,6 +89,11 @@
         />
       </TabsItem>
       <TabsItem :title="$t('home.tabs.events.title')">
+        <Card3d
+          :title="$t('home.tabs.featured.speed_friending.title')"
+          :subtitle="$t('home.tabs.featured.speed_friending.subtitle')"
+          image_src="/img/speed_friending.jpg"
+        />
         <Card3d
           :title="$t('home.tabs.events.kahoot.title')"
           :subtitle="$t('home.tabs.events.kahoot.subtitle')"
@@ -160,8 +164,36 @@
     </Tabs>
   </NuxtLayout>
 
+  <!-- testimonials -->
+  <LayoutSection>
+    <LayoutHeadingTag>{{ $t('home.testimonials.tag') }}</LayoutHeadingTag>
+    <LayoutHeadingGradient
+      >{{ $t('home.testimonials.title') }}
+    </LayoutHeadingGradient>
+    <div
+      class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none"
+    >
+      <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+        <div
+          v-for="testimonial in testimonials"
+          :key="testimonial.cite"
+          class="pt-8 sm:inline-block sm:w-full sm:px-4"
+        >
+          <Testimonial
+            :cite="testimonial.cite"
+            :author_name="testimonial?.author?.name"
+            :author_handle="testimonial?.author?.handle"
+            :author_avatar_url="testimonial?.author?.avatar_url"
+          />
+        </div>
+      </div>
+    </div>
+  </LayoutSection>
+
   <!-- blog -->
   <NuxtLayout name="dots" id="blog">
+    <LayoutHeadingTag class="pt-40">{{ $t('home.blog.tag') }}</LayoutHeadingTag>
+    <LayoutHeadingGradient>{{ $t('home.blog.title') }}</LayoutHeadingGradient>
     <ArticleOverview
       :title="$t('home.blog.title')"
       :articles="[
@@ -195,7 +227,7 @@
 
   <!-- get notified -->
   <SparklesBeams />
-  <div id="community" class="py-16 sm:py-24">
+  <section id="community" class="py-16 sm:py-24">
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div
         class="relative isolate overflow-hidden bg-second-950 px-6 py-24 shadow-2xl dark:bg-second-900 sm:rounded-3xl sm:px-24 xl:py-32"
@@ -250,5 +282,60 @@
         </svg>
       </div>
     </div>
-  </div>
+  </section>
 </template>
+
+<script setup lang="ts">
+const testimonials: [
+  {
+    cite: string;
+    author?: {
+      name?: string;
+      handle?: string;
+      avatar_url?: string;
+    };
+  },
+] = [
+  {
+    cite: 'Ein Vierteljahrhundert mit Elias ist ein aufregendes Abenteuer voller Lachen, guter Laune und unvergesslicher Momente, die das Leben bunt und lebendig machen. - Dies gilt nicht nur für seine Geburtstagsfeiern!',
+    author: {
+      name: 'Carmen Schaut',
+      handle: 'Familie',
+      avatar_url: '/img/testimonials/carmen_schaut.jpg',
+    },
+  },
+  {
+    cite: 'Super Feier! Hatte viel Eiweiß und wenig Fett',
+    author: {
+      handle: 'Lila Pause',
+    },
+  },
+  {
+    cite: 'Wenn Elias so viel Aufwand in sein Studium stecken würde, wie er in seine Geburtstagsfeiern steckt, hätte er schon längst einen Doktor.',
+    author: {
+      name: 'Niklas Kniep',
+      handle: 'Lila Pause',
+    },
+  },
+  {
+    cite: 'Ich würde meinen eigenen Vater verkaufen für eine Einladung',
+    author: {
+      name: 'Kaan Göbül',
+      handle: 'Lila Pause',
+    },
+  },
+  {
+    cite: 'Wer Elias nicht kennt und seine Geburtstage, hat echt was im Leben verpasst!',
+    author: {
+      name: 'Sean Ireland',
+      handle: 'Mannheim',
+    },
+  },
+  {
+    cite: 'Wer braucht Tinder, wenn man bei Elias Geburtstag heiße Singles aus der Umgebung von Mannheim kennenlernen kann?',
+    author: {
+      handle: 'Lila Pause',
+    },
+  },
+];
+</script>
