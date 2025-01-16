@@ -170,24 +170,20 @@
     <LayoutHeadingGradient
       >{{ $t('home.testimonials.title') }}
     </LayoutHeadingGradient>
-    <div
-      class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none"
-    >
-      <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
-        <div
-          v-for="testimonial in testimonials"
-          :key="testimonial.cite"
-          class="pt-8 sm:inline-block sm:w-full sm:px-4"
-        >
-          <Testimonial
-            :cite="testimonial.cite"
-            :author_name="testimonial?.author?.name"
-            :author_handle="testimonial?.author?.handle"
-            :author_avatar_url="testimonial?.author?.avatar_url"
-          />
-        </div>
+    <TestimonialGrid>
+      <div
+        v-for="testimonial in testimonials"
+        :key="testimonial.cite"
+        class="pt-8 sm:inline-block sm:w-full sm:px-4"
+      >
+        <Testimonial
+          :cite="testimonial.cite"
+          :author_name="testimonial?.author?.name"
+          :author_handle="testimonial?.author?.handle"
+          :author_avatar_url="testimonial?.author?.avatar_url"
+        />
       </div>
-    </div>
+    </TestimonialGrid>
   </LayoutSection>
 
   <!-- blog -->
@@ -226,7 +222,6 @@
   </NuxtLayout>
 
   <!-- get notified -->
-  <SparklesBeams />
   <section id="community" class="py-16 sm:py-24">
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div
@@ -286,16 +281,14 @@
 </template>
 
 <script setup lang="ts">
-const testimonials: [
-  {
-    cite: string;
-    author?: {
-      name?: string;
-      handle?: string;
-      avatar_url?: string;
-    };
-  },
-] = [
+const testimonials: Array<{
+  cite: string;
+  author?: {
+    name?: string;
+    handle?: string;
+    avatar_url?: string;
+  };
+}> = [
   {
     cite: 'Ein Vierteljahrhundert mit Elias ist ein aufregendes Abenteuer voller Lachen, guter Laune und unvergesslicher Momente, die das Leben bunt und lebendig machen. - Dies gilt nicht nur für seine Geburtstagsfeiern!',
     author: {

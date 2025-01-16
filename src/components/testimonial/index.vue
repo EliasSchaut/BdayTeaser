@@ -1,6 +1,6 @@
 <template>
-  <figure class="rounded-2xl bg-second-50 p-8 text-sm/6">
-    <blockquote class="text-second-900">
+  <figure class="rounded-2xl bg-second-50 p-8 text-sm/6 dark:bg-second-900">
+    <blockquote class="text-second-900dark:text-white">
       <p>{{ `“${cite}”` }}</p>
     </blockquote>
     <figcaption class="mt-6 flex items-center gap-x-4">
@@ -12,15 +12,15 @@
       />
       <UserCircleIcon
         v-else
-        class="h-10 w-10 rounded-full text-gray-300 dark:text-gray-400"
+        class="h-10 w-10 rounded-full text-gray-300 dark:text-gray-500"
         aria-hidden="true"
       />
 
       <div>
-        <div class="font-semibold text-second-900">
+        <div class="font-semibold text-second-900 dark:text-white">
           {{ author_name ?? $t('common.unknown.person') }}
         </div>
-        <div class="text-second-600">
+        <div class="text-second-600 dark:text-second-500">
           {{ `@${author_handle ?? $t('common.unknown.organisation')}` }}
         </div>
       </div>
