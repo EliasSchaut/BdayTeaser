@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="relative flex w-full flex-col items-center justify-center overflow-hidden"
-  >
+  <div class="relative flex w-full flex-col items-center justify-center">
     <div class="absolute inset-0 w-full">
       <SparklesCore
         background="transparent"

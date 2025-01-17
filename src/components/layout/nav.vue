@@ -24,7 +24,7 @@
               >{{ $t('nav.blog') }}</a
             >
             <a
-              class="hidden rounded-md px-2 py-1 hover:bg-prime-50 dark:hover:bg-prime-950 sm:inline"
+              class="hidden rounded-md px-2 py-1 hover:bg-prime-50 dark:hover:bg-prime-950 md:inline"
               href="/#community"
               >{{ $t('nav.community') }}</a
             >

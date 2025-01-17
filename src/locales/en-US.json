@@ -1,5 +1,6 @@
 {
   "common": {
+    "file": "File",
     "lang": {
       "de": "German",
       "en": "English"
@@ -58,6 +59,7 @@
       "1": "The birthday party will take place on ",
       "2": ". It's the event ",
       "3": "Keep the date free and be part of it!",
+      "add_to_calendar": "Add to calendar",
       "date": "07 June 2025",
       "join_community": "Join Community",
       "learn_more": "Learn more"
