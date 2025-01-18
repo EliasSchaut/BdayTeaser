@@ -11,7 +11,7 @@
   <Meta name="author" content="Elias Lorenz Schaut" />
   <meta name="copyright" content="Elias Lorenz Schaut" />
   <Meta name="theme-color" content="#4f46e5" />
-  <Meta name="image" content="/favicon/thumbnail.png" />
+  <Meta name="og:image" content="/favicon/thumbnail.png" />
   <Link
     rel="apple-touch-icon"
     sizes="180x180"
