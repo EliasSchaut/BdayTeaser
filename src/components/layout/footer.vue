@@ -47,7 +47,7 @@ const navigation = ref([
     icon: ClipboardDocumentCheckIcon,
   },
   {
-    name: computed(() => 'GitHub'),
+    name: 'GitHub',
     href: 'https://github.com/EliasSchaut/BdayTeaser',
     intern: false,
     icon: defineComponent({
