@@ -348,10 +348,11 @@ const testimonials: Array<{
     },
   },
   {
-    cite: 'Wenn Elias so viel Aufwand in sein Studium stecken würde, wie er in seine Geburtstagsfeiern steckt, hätte er schon längst einen Doktor.',
+    cite: "Elias' Geburtstag ist nicht irgendein Geburtstag. Livemusik, Geschicklichkeitsspiele, geheime Missionen, kollaborative kreative Projekte, aber natürlich auch Grillen und Getränke in der Bar machen machen den Tag zu einem besonderen Wiedertreffen für alle, die sich Freunde und Verwandte von Elias nennen dürfen.",
     author: {
-      name: 'Niklas Kniep',
-      handle: 'Lila Pause',
+      name: 'Valentin Quapil',
+      handle: 'KIT',
+      avatar_url: '/img/testimonials/valentin_quapil.jpg',
     },
   },
   {
@@ -359,6 +360,13 @@ const testimonials: Array<{
     author: {
       name: 'Sean Ireland',
       handle: 'Mannheim',
+    },
+  },
+  {
+    cite: 'Wenn Elias so viel Aufwand in sein Studium stecken würde, wie er in seine Geburtstagsfeiern steckt, hätte er schon längst einen Doktor.',
+    author: {
+      name: 'Niklas Kniep',
+      handle: 'Lila Pause',
     },
   },
   {
