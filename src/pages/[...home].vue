@@ -41,7 +41,7 @@
           <DropdownMenu>
             <DropdownMenuItem>
               <DropdownMenuItemLink
-                href="https://outlook.live.com/calendar/deeplink/compose/?rru=addevent&startdt=2025-06-07T16%3a00%3a00Z&enddt=2025-06-08T02%3a00%3a00Z&subject=Kids+Bday&location=Klosterweg+28+(Haus+K2)%2c+76131+Karlsruhe&body=Am+07.+Juni+2025+steigt+die+Geburtstagsparty+des+Jahres!+Halte+den+Termin+frei+und+sei+dabei!"
+                href="https://calendar.google.com/calendar/u/0/r/eventedit?dates=20250607T180000/20250608T040000&ctz=Europe/Berlin&text=Kids+Bday&location=Klosterweg+28+(Haus+K2),+76131+Karlsruhe&details=Am+07.+Juni+2025+steigt+die+Geburtstagsparty+des+Jahres!+Halte+den+Termin+frei+und+sei+dabei!&crm=BUSY&trp=true"
                 target="_blank"
               >
                 <NuxtImg
@@ -64,7 +64,7 @@
             </DropdownMenuItem>
             <DropdownMenuItem>
               <DropdownMenuItemLink
-                href="https://outlook.live.com/calendar/action/compose?rru=addevent&startdt=2025-02-05T09:15:00Z&enddt=2025-02-05T16:45:00Z&subject=Beispiel-Event&location=Das%20Internet&body=Spiel%20mit%20mir!"
+                href="https://outlook.live.com/calendar/deeplink/compose/?rru=addevent&startdt=2025-06-07T16%3a00%3a00Z&enddt=2025-06-08T02%3a00%3a00Z&subject=Kids+Bday&location=Klosterweg+28+(Haus+K2)%2c+76131+Karlsruhe&body=Am+07.+Juni+2025+steigt+die+Geburtstagsparty+des+Jahres!+Halte+den+Termin+frei+und+sei+dabei!""
                 target="_blank"
               >
                 <NuxtImg
