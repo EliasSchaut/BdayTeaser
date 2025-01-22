@@ -64,7 +64,7 @@
             </DropdownMenuItem>
             <DropdownMenuItem>
               <DropdownMenuItemLink
-                href="https://outlook.live.com/calendar/deeplink/compose/?rru=addevent&startdt=2025-06-07T16%3a00%3a00Z&enddt=2025-06-08T02%3a00%3a00Z&subject=Kids+Bday&location=Klosterweg+28+(Haus+K2)%2c+76131+Karlsruhe&body=Am+07.+Juni+2025+steigt+die+Geburtstagsparty+des+Jahres!+Halte+den+Termin+frei+und+sei+dabei!""
+                href="https://outlook.live.com/calendar/deeplink/compose/?rru=addevent&startdt=2025-06-07T16%3a00%3a00Z&enddt=2025-06-08T02%3a00%3a00Z&subject=Kids+Bday&location=Klosterweg+28+(Haus+K2)%2c+76131+Karlsruhe&body=Am+07.+Juni+2025+steigt+die+Geburtstagsparty+des+Jahres!+Halte+den+Termin+frei+und+sei+dabei!"
                 target="_blank"
               >
                 <NuxtImg
