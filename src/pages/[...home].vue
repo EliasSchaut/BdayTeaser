@@ -328,6 +328,7 @@ import { CalendarDaysIcon } from '@heroicons/vue/16/solid';
 const testimonials: Array<{
   cite: string;
   author?: {
+
     name?: string;
     handle?: string;
     avatar_url?: string;
@@ -360,6 +361,7 @@ const testimonials: Array<{
     author: {
       name: 'Sean Ireland',
       handle: 'Mannheim',
+      avatar_url: '/img/testimonials/sean_ireland.jpg',
     },
   },
   {
@@ -367,6 +369,7 @@ const testimonials: Array<{
     author: {
       name: 'Niklas Kniep',
       handle: 'Lila Pause',
+      avatar_url: '/img/testimonials/niklas_kniep.jpg',
     },
   },
   {
