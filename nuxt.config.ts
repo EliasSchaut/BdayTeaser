@@ -1,15 +1,17 @@
+import tailwindcss from '@tailwindcss/vite';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
   workspaceDir: '.',
   srcDir: './src',
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: '2025-03-20',
+  css: ['~/assets/css/main.css'],
   modules: [
     '@nuxt/fonts',
     '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxtjs/i18n',
-    '@nuxtjs/tailwindcss',
     '@nuxtjs/sitemap',
     '@pinia/nuxt',
     '@vueuse/motion/nuxt',
@@ -17,6 +19,10 @@ export default defineNuxtConfig({
     'nuxt-particles',
     'pinia-plugin-persistedstate/nuxt',
   ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 
   site: {
     url: 'https://bday.schaut.dev',
@@ -72,21 +78,15 @@ export default defineNuxtConfig({
     storageKey: 'nuxt-color-mode',
   },
 
-  tailwindcss: {
-    configPath: 'tailwind.config.ts',
-  },
-
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
-
   piniaPluginPersistedstate: {
     storage: 'cookies',
     cookieOptions: {
       maxAge: 60 * 60 * 24 * 30,
     },
+  },
+
+  particles: {
+    mode: 'slim',
+    lazy: true,
   },
 });
